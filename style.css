@@ -1,0 +1,76 @@
+body {
+  background-image: url(menu/pattern.png);
+}
+
+/*manca container che ho definito in html*/
+
+#box {
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+  position: relative;
+}
+
+.shadow,
+#phaser-container canvas {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+}
+
+#box>a:hover>.hide-on-hover,
+#box>a>.show-on-hover {
+  display: none;
+}
+
+#box a:hover>.show-on-hover,
+#box a>.hide-on-hover {
+  display: block;
+}
+
+
+
+#slideshow,
+#colophon,
+#avanti,
+#preloading,
+#indietros,
+#indietroc,
+#gioca, 
+#crediti,
+#storia {
+  position: absolute;
+}
+
+
+#avanti {
+  left: calc(50% - 64px);
+  top: 390px;
+}
+
+#indietros {
+  left: calc(50% - 160px);
+  top: 450px;
+}
+
+#indietroc {
+  left: 20px;
+  top: 20px;;
+}
+
+  canvas {
+    display: none;
+  }
+  
+  #gioca {
+    left: 0px;
+    top: 440px;
+  }
+  
+  #storia {
+    left: 20px;
+    top: 330px;
+  }
+  
+  #crediti {
+    left: 40px;
+    top: 550px;
+  }

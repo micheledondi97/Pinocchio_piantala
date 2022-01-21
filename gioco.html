@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Pinocchio</title>
+    <script src="phaser.min.js"></script>
+    <link rel="icon" type="image/png" href="Inizio/icona.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<style>
+    body {
+        background-color: rgb(107, 221, 187);
+    }
+
+
+    #preloading {
+        position: fixed;
+        z-index: 999;
+        top: calc(50% - 384px);
+        width: 100%;
+        text-align: center;
+    }
+
+    #preloading img {
+        margin: auto;
+    }
+</style>
+
+<body>
+
+    <div class="preload" id="preloading">
+        <img src="Inizio/GIF.gif" class="shadow" alt="Loading">
+    </div>
+    <div id="phaser-container" class="container"
+        style="min-height: 100vh; display: none; align-items: center;justify-content: center;">
+
+    </div>
+    <script src="js/variabili.js"> </script>
+    <script src="js/preload.js"> </script>
+    <script src="js/create.js"> </script>
+    <script src="js/update.js"> </script>
+    <script src="js/gioco.js"> </script>
+</body>
+
+</html>

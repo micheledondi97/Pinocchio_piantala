@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="icon" type="image/png" href="Inizio/icona.png">
+
+    <link rel="stylesheet" type="text/css" href="storia.css ">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <title>Pinocchio piantala</title>
+
+</head>
+
+<body>
+    <style>
+        .pos-absolute {
+            position: absolute;
+        }
+
+        .shadow,
+        #phaser-container canvas {
+            box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+        }
+
+        #box a:hover>.hide-on-hover,
+        #box a>.show-on-hover {
+            display: none;
+        }
+
+        #box a:hover>.show-on-hover,
+        #box a>.hide-on-hover {
+            display: block;
+        }
+    </style>
+    <div class="container" style="min-height: 100vh; display: flex; align-items: center;justify-content: center;">
+        <!-- Contenuto -->
+        <div id="box">
+
+            <div class="Immagineslide fade ">
+                <img src="storia/testo1.png" class="shadow" style="width:100%">
+            </div>
+
+            <div class="Immagineslide fade">
+                <img src="storia/scena1.png" class="shadow" style="width:100%">
+            </div>
+
+            <div class="Immagineslide fade">
+                <img src="storia/testo2.png" class="shadow" style="width:100%">
+            </div>
+
+            <div class="Immagineslide fade">
+                <img src="storia/scena2.png" class="shadow" style="width:100%">
+            </div>
+
+            <div class="Immagineslide fade">
+                <img src="storia/testo3.png" class="shadow" style="width:100%">
+            </div>
+
+            <div class="Immagineslide fade">
+                <img src="storia/scena3.png" class="shadow" style="width:100%">
+            </div>
+
+            <div class="Immagineslide fade" style="position:relative;">
+                <img src="storia/testo5.png" class="shadow" style="width:100%" />
+
+                <a id="avanti" href="gioco.html">
+                    <img src="storia/giocab.png" class="hide-on-hover" />
+                    <img src="storia/giocar.png" class="show-on-hover" />
+                </a>
+
+                <a id="indietros" href="index.html">
+                    <img src="storia/tornab.png" class="hide-on-hover" />
+                    <img src="storia/tornar.png" class="show-on-hover" />
+                </a>
+            </div>
+
+            <a class="Sinistra" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="Destra" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <script>
+            var Indice = 1;
+            showSlides(Indice);
+
+            function plusSlides(n) {
+                showSlides(Indice += n);
+            }
+
+            function showSlides(n) {
+                var ok;
+                var immagine = document.getElementsByClassName("Immagineslide");
+                if (n > immagine.length) {
+                    Indice = 1
+                }
+                if (n < 1) {
+                    Indice = immagine.length
+                }
+                for (ok = 0; ok < immagine.length; ok++) {
+                    immagine[ok].style.display = "none";
+                }
+
+                immagine[Indice - 1].style.display = "block";
+            }
+        </script>
+
+</body>
+
+</html>
