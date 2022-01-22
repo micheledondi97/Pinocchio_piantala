@@ -126,7 +126,6 @@ function takeChiave5() {
 function hitCloudPlatform(player, platform) {
 
     if (platform.body.touching.up) {
-        platform.body.velocity.x = Math.sin(game.time.totalElapsedSeconds() * 50) * 200
 
         platformShake = true;
         game.time.events.add(Phaser.Timer.SECOND * 1, function () {
