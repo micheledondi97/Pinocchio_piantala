@@ -356,11 +356,11 @@ function update() {
     }
 
 
-    if (player.x > 14030 && player.x < 14130 && messaggio0Mostrato == 0) {
+    if (player.x > 14030 && player.x < 14200 && messaggio0Mostrato == 0) {
         messaggio0.alpha = 1;
 
     }
-    else if (player.x > 14130) {
+    else if (player.x > 14200) {
         messaggio0.alpha = 0;
         messaggio0Mostrato = 1;
     }
