@@ -590,12 +590,12 @@ function create() {
 
     volta2.create(10028, 650, 'volta2');
 
-    fine2.create(10528, 600, 'fine');
-    fine2.create(10470, 600, 'fine');
-    fine2.create(10470, 500, 'fine');
-    fine2.create(10470, 400, 'fine');
+    fine2.create(10523, 600, 'fine');
+    fine2.create(10460, 600, 'fine');
+    fine2.create(10460, 500, 'fine');
+    fine2.create(10460, 400, 'fine');
     fine2.create(10528, 500, 'fine');
-    fine2.create(10528, 400, 'fine');
+    fine2.create(10523, 400, 'fine');
 
     fine2.alpha = 0;
 

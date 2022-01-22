@@ -272,22 +272,32 @@ function update() {
 
 
     function fine_2() {
-        game.time.events.add(1000, function () {
-            tavola2.alpha = 1;
-            contapunti.alpha = 0;
-            contapunti1.alpha = 0;
-            contapunti2.alpha = 0;
-            contapunti3.alpha = 0;
-            contapunti4.alpha = 0;
-            contapunti5.alpha = 0;
-            contapunti6.alpha = 0;
-            contapunti20.visible = true;
-            player.x = 11700
-        })
-        game.time.events.add(5000, function () {
-            tavola2.alpha = 0;
+        if (contapunti6.visible == true && contapunti4.visible == true && contapunti3.visible == true && contapunti2.visible == true && contapunti1.visible == true && contapunti.visible == true) {
+            enemy9.kill()
+            fata.alpha = 1
+            game.time.events.add(1000, function () {
+                tavola2.alpha = 1;
+                contapunti.alpha = 0;
+                contapunti1.alpha = 0;
+                contapunti2.alpha = 0;
+                contapunti3.alpha = 0;
+                contapunti4.alpha = 0;
+                contapunti5.alpha = 0;
+                contapunti6.alpha = 0;
+                contapunti20.visible = true;
+                player.x = 11700
+            })
+            game.time.events.add(5000, function () {
+                tavola2.alpha = 0;
 
-        })
+            })
+        }
+        else {
+            game.time.events.add(100, function () {
+                respawn2(player)
+            })
+        }
+
     }
 
     function fine_3() {
