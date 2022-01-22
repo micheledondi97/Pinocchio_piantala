@@ -112,7 +112,6 @@ function update() {
     game.physics.arcade.collide(player, chiave4, takeChiave4);
     game.physics.arcade.collide(player, chiave5, takeChiave5);
 
-
     game.physics.arcade.overlap(player, fine, fine1);
     game.physics.arcade.overlap(player, fine2, fine_2);
     game.physics.arcade.collide(player, gabbia, fine_3);
@@ -255,7 +254,7 @@ function update() {
 
 
     function fine_2() {
-        if (contapunti6.visible == true && contapunti4.visible == true && contapunti3.visible == true && contapunti2.visible == true && contapunti1.visible == true) {
+        if (contapunti6.visible == true && contapunti5.visible == true && contapunti4.visible == true && contapunti3.visible == true && contapunti2.visible == true && contapunti1.visible == true) {
             enemy9.kill()
             fata.alpha = 1
             game.time.events.add(1000, function () {
