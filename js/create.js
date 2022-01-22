@@ -41,7 +41,7 @@ function create() {
     confine.alpha = 0;
     confine.setAll('body.immovable', true);
 
-    player = game.add.sprite(80, 4000, 'player');
+    player = game.add.sprite(10, 7910, 'player');
 
     player.animations.add("fermodx", [0, 1, 2, 3, 4, 5, 6], true)
     player.animations.add("fermosx", [7, 8, 9, 10, 11, 12, 13], true)
