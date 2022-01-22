@@ -299,7 +299,7 @@ function update() {
                 gabbia.alpha = 0
                 tavola4.alpha = 1;
             })
-            game.time.events.add(4000, function () {
+            game.time.events.add(6000, function () {
                 menu.visible = true;
                 home.visible = true;
             })
@@ -311,7 +311,7 @@ function update() {
                 mangiafuoco2.destroy()
                 bracciodx2.destroy()
                 bracciosx2.destroy()
-                game.time.events.add(4000, function () {
+                game.time.events.add(6000, function () {
                     menu.visible = true;
                     home.visible = true;
                 })
