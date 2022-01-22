@@ -56,6 +56,7 @@ function create() {
 
     player.body.collideWorldBounds = true;
     player.body.gravity.y = 600;
+    game.physics.p2.friction = 5;
 
     fata = game.add.sprite(10500, 500, 'fata1');
     fata.animations.add("ferma1", [0, 1, 2, 3, 4, 5, 6], true)
@@ -202,8 +203,8 @@ function create() {
     this.add.image(12580, -355, 'corda');
     this.add.image(12815, -355, 'corda');
     this.add.image(13115, -355, 'corda');
-    this.add.image(12815, 500, 'corda');
-    this.add.image(13115, 500, 'corda');
+    this.add.image(12815, 300, 'corda');
+    this.add.image(13115, 300, 'corda');
     this.add.image(13345, -695, 'corda');
     this.add.image(13645, -695, 'corda');
 
@@ -880,8 +881,6 @@ function create() {
     jumpButton = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
     actionButton = game.input.keyboard.addKey(Phaser.Keyboard.C);
     ESC = game.input.keyboard.addKey(Phaser.Keyboard.ESC)
-
-
 
     ESC.onDown.add(togglePause)
 
