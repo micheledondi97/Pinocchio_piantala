@@ -223,12 +223,26 @@ function update() {
     fata1.animations.play('ferma1', 3)
     fata.animations.play('ferma1', 3)
 
-    chiave.animations.play('oggetto', 7)
-    chiave1.animations.play('oggetto', 7)
-    chiave2.animations.play('oggetto', 7)
-    chiave3.animations.play('oggetto', 7)
-    chiave4.animations.play('oggetto', 7)
-    chiave5.animations.play('oggetto', 7)
+    moneta.animations.play('oggetto', 9)
+    moneta1.animations.play('oggetto', 9)
+    moneta2.animations.play('oggetto', 9)
+    moneta3.animations.play('oggetto', 9)
+    moneta4.animations.play('oggetto', 9)
+    moneta5.animations.play('oggetto', 9)
+
+    chiave.animations.play('oggetto', 9)
+    chiave1.animations.play('oggetto', 9)
+    chiave2.animations.play('oggetto', 9)
+    chiave3.animations.play('oggetto', 9)
+    chiave4.animations.play('oggetto', 9)
+    chiave5.animations.play('oggetto', 9)
+
+    star0.animations.play('oggetto', 9)
+    star.animations.play('oggetto', 9)
+    star2.animations.play('oggetto', 9)
+    star3.animations.play('oggetto', 9)
+    star4.animations.play('oggetto', 9)
+    star5.animations.play('oggetto', 9)
 
 
     function fine1() {
@@ -277,7 +291,7 @@ function update() {
     }
 
     function fine_3() {
-        if (contapunti26.visible == true && contapunti24.visible == true && contapunti23.visible == true && contapunti22.visible == true && contapunti21.visible == true && contapunti.visible25 == true) {
+        if (contapunti26.visible == true && contapunti24.visible == true && contapunti23.visible == true && contapunti22.visible == true && contapunti21.visible == true && contapunti25.visible == true) {
             game.time.events.add(1000, function () {
                 mangiafuoco2.destroy()
                 bracciodx2.destroy()

@@ -73,7 +73,7 @@ function preload() {
     game.load.image('leva', 'Assets/leva.png');
     game.load.image('leva2', 'Assets/leva2.png');
 
-    game.load.image('star', 'Assets/Star.png');
+    game.load.spritesheet('star', 'Assets/forbice.png', 69, 50);
 
     game.load.spritesheet('player', 'Assets/PROVA.png', 78.3649, 120);
 
@@ -86,7 +86,7 @@ function preload() {
     game.load.image('platform1', 'Assets/piattaformaferma.png');
     game.load.image('mobileplatform', 'Assets/piattaformamobile.png');
     game.load.image('cloudplatform', 'Assets/cloudplatform1.png');
-    game.load.image('moneta', 'Assets/moneta.png')
+    game.load.spritesheet('moneta', 'Assets/monete.png', 70, 90)
     game.load.spritesheet('nemicouccello', 'Assets/nemicouccello.png', 128, 60)
     game.load.image('contapunti10', 'Assets/contapunti10.png');
     game.load.image('contapunti11', 'Assets/contapunti11.png');

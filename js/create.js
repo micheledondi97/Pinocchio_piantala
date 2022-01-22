@@ -202,13 +202,13 @@ function create() {
     this.add.image(12580, -355, 'corda');
     this.add.image(12815, -355, 'corda');
     this.add.image(13115, -355, 'corda');
-    this.add.image(12815, 300, 'corda');
-    this.add.image(13115, 300, 'corda');
+    this.add.image(12815, 500, 'corda');
+    this.add.image(13115, 500, 'corda');
     this.add.image(13345, -695, 'corda');
     this.add.image(13645, -695, 'corda');
 
     this.add.image(15135, -230, 'corda');
-    this.add.image(15935, -150, 'corda');
+    this.add.image(16035, -150, 'corda');
     this.add.image(16490, -160, 'corda');
     this.add.image(16730, -160, 'corda');
     this.add.image(16997, -300, 'corda');
@@ -258,7 +258,7 @@ function create() {
     game.physics.arcade.enable(chiave3);
     chiave3.animations.add("oggetto", [0, 1, 2, 3, 4, 5, 6, 7], true)
 
-    chiave4 = game.add.sprite(19950, 800, 'chiave');
+    chiave4 = game.add.sprite(19900, 800, 'chiave');
     game.physics.arcade.enable(chiave4);
     chiave4.animations.add("oggetto", [0, 1, 2, 3, 4, 5, 6, 7], true)
 
