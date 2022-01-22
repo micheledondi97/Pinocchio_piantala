@@ -279,7 +279,7 @@ function update() {
     }
 
     function fine_3() {
-        if (player.x > 22000 && contapunti26.visible == true && contapunti24.visible == true && contapunti23.visible == true && contapunti22.visible == true && contapunti21.visible == true && contapunti.visible25 == true) {
+        if (contapunti26.visible == true && contapunti24.visible == true && contapunti23.visible == true && contapunti22.visible == true && contapunti21.visible == true && contapunti.visible25 == true) {
             game.time.events.add(1000, function () {
                 mangiafuoco2.destroy()
                 bracciodx2.destroy()
@@ -287,14 +287,22 @@ function update() {
                 gabbia.alpha = 0
                 tavola4.alpha = 1;
             })
+            game.time.events.add(4000, function () {
+                menu.visible = true;
+                home.visible = true;
+            })
         }
 
-        else if (contapunti26.visible == false || contapunti24.visible == false || contapunti23.visible == false || contapunti22.visible == false || contapunti21.visible == false || contapunti.visible25 == false) {
-            game.time.events.add(4000, function () {
+        else {
+            game.time.events.add(2000, function () {
                 tavola3.alpha = 1;
                 mangiafuoco2.destroy()
                 bracciodx2.destroy()
                 bracciosx2.destroy()
+                game.time.events.add(4000, function () {
+                    menu.visible = true;
+                    home.visible = true;
+                })
             })
         }
     }
