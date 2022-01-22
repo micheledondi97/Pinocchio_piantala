@@ -126,9 +126,7 @@ function update() {
 
 
 
-    if (platformShake == true) {
-        cloudplatform.body.velocity.x = Math.sin(game.time.totalElapsedSeconds() * 50) * 200
-    }
+
 
     if (player.x > 10200 && contapunti6.visible == true && contapunti4.visible == true && contapunti3.visible == true && contapunti2.visible == true && contapunti1.visible == true && contapunti.visible == true) {
         enemy9.kill()
