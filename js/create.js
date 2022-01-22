@@ -899,7 +899,6 @@ function create() {
     home.inputEnabled = true;
     home.fixedToCamera = true;
 
-    platformShake = false;
 
     setTimeout(function () {
         var preloadingDiv = document.getElementById('preloading');

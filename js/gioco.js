@@ -127,13 +127,11 @@ function hitCloudPlatform(player, platform) {
 
     if (platform.body.touching.up) {
 
-        platformShake = true;
         game.time.events.add(Phaser.Timer.SECOND * 1, function () {
             platform.kill();
 
             game.time.events.add(Phaser.Timer.SECOND * 2, function () {
                 platform.revive()
-                platformShake = false;
                 platform.body.velocity.x = 0
 
             })
