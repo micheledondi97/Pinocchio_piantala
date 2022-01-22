@@ -120,8 +120,6 @@ function update() {
     game.physics.arcade.collide(player, casse);
 
 
-
-
     player.body.velocity.x = 0;
 
     function respawn2(player) {
