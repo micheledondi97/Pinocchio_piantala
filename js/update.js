@@ -255,7 +255,7 @@ function update() {
 
 
     function fine_2() {
-        if (contapunti6.visible == true && contapunti4.visible == true && contapunti3.visible == true && contapunti2.visible == true && contapunti1.visible == true && contapunti.visible == true) {
+        if (contapunti6.visible == true && contapunti4.visible == true && contapunti3.visible == true && contapunti2.visible == true && contapunti1.visible == true) {
             enemy9.kill()
             fata.alpha = 1
             game.time.events.add(1000, function () {
@@ -272,7 +272,6 @@ function update() {
             })
             game.time.events.add(5000, function () {
                 tavola2.alpha = 0;
-
             })
         }
         else {
