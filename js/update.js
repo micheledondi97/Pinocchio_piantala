@@ -38,7 +38,6 @@ function update() {
     game.physics.arcade.overlap(player, enemy6, hitEnemy);
     game.physics.arcade.overlap(player, enemy7, hitEnemyA);
     game.physics.arcade.collide(player, enemy8, hitEnemyA);
-    game.physics.arcade.collide(player, enemy9, hitEnemyA);
     game.physics.arcade.overlap(player, enemy10, hitEnemy);
     game.physics.arcade.overlap(player, enemy11, hitEnemy);
     game.physics.arcade.overlap(player, enemy12, hitEnemyA);
