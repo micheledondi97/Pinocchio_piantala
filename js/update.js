@@ -412,9 +412,9 @@ function update() {
 
     if (salto) {
         if (cursors.right.isDown)
-            player.animations.play('saltodx')
+            player.animations.play('jumpdx')
         if (cursors.left.isDown)
-            player.animations.play('saltosx')
+            player.animations.play('jumpsx')
     }
 
 }
