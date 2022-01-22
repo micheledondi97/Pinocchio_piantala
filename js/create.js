@@ -118,7 +118,7 @@ function create() {
     platform1.create(170, 3720, 'platform1');
 
     cloudplatform = game.add.sprite(508, 3540, 'cloudplatform');
-    cloudplatform1 = game.add.sprite(140, 3350, 'cloudplatform');
+    platform1.create(140, 3350, 'platform1');
     cloudplatform2 = game.add.sprite(598, 3165, 'cloudplatform');
     cloudplatform3 = game.add.sprite(253, 3010, 'cloudplatform');
     cloudplatform4 = game.add.sprite(600, 2835, 'cloudplatform');
@@ -142,7 +142,6 @@ function create() {
     platform1.create(0, 800, 'platform1');
 
     game.physics.arcade.enable(cloudplatform);
-    game.physics.arcade.enable(cloudplatform1);
     game.physics.arcade.enable(cloudplatform2);
     game.physics.arcade.enable(cloudplatform3);
     game.physics.arcade.enable(cloudplatform4);
@@ -153,7 +152,6 @@ function create() {
     game.physics.arcade.enable(cloudplatform9);
 
     cloudplatform.body.immovable = true;
-    cloudplatform1.body.immovable = true;
     cloudplatform2.body.immovable = true;
     cloudplatform3.body.immovable = true;
     cloudplatform4.body.immovable = true;

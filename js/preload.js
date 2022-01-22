@@ -73,7 +73,7 @@ function preload() {
     game.load.image('leva', 'Assets/leva.png');
     game.load.image('leva2', 'Assets/leva2.png');
 
-    game.load.image('star', 'Assets/star.png');
+    game.load.image('star', 'Assets/Star.png');
 
     game.load.spritesheet('player', 'Assets/PROVA.png', 78.3649, 120);
 
