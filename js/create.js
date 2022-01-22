@@ -56,7 +56,6 @@ function create() {
 
     player.body.collideWorldBounds = true;
     player.body.gravity.y = 600;
-    game.physics.p2.friction = 5;
 
     fata = game.add.sprite(10500, 500, 'fata1');
     fata.animations.add("ferma1", [0, 1, 2, 3, 4, 5, 6], true)
@@ -641,51 +640,63 @@ function create() {
 
     //FORBICI
     star0 = game.add.sprite(1700, 550, 'star');
+    star0.animations.add("oggetto", [0, 1, 2, 3, 4, 5, 6, 7], true)
     game.physics.arcade.enable(star0);
 
     star = game.add.sprite(2528, 95, 'star');
+    star.animations.add("oggetto", [0, 1, 2, 3, 4, 5, 6, 7], true)
     game.physics.arcade.enable(star);
 
     star2 = game.add.sprite(3528, 1100, 'star');
+    star2.animations.add("oggetto", [0, 1, 2, 3, 4, 5, 6, 7], true)
     game.physics.arcade.enable(star2);
 
     star3 = game.add.sprite(5428, 1100, 'star');
+    star3.animations.add("oggetto", [0, 1, 2, 3, 4, 5, 6, 7], true)
     game.physics.arcade.enable(star3);
 
     star4 = game.add.sprite(7718, 120, 'star');
+    star4.animations.add("oggetto", [0, 1, 2, 3, 4, 5, 6, 7], true)
     game.physics.arcade.enable(star4);
 
     star5 = game.add.sprite(9028, 90, 'star');
+    star5.animations.add("oggetto", [0, 1, 2, 3, 4, 5, 6, 7], true)
     game.physics.arcade.enable(star5);
 
     //MONETE
     moneta = game.add.sprite(250, 7505, 'moneta');
     game.physics.arcade.enable(moneta);
+    moneta.animations.add("oggetto", [0, 1, 2, 3, 4, 5, 6, 7], true)
     moneta.scale.x = 0.8
     moneta.scale.y = 0.8
 
     moneta1 = game.add.sprite(609, 6320, 'moneta');
     game.physics.arcade.enable(moneta1);
+    moneta1.animations.add("oggetto", [0, 1, 2, 3, 4, 5, 6, 7], true)
     moneta1.scale.x = 0.8
     moneta1.scale.y = 0.8
 
     moneta2 = game.add.sprite(272, 5033, 'moneta');
     game.physics.arcade.enable(moneta2);
+    moneta2.animations.add("oggetto", [0, 1, 2, 3, 4, 5, 6, 7], true)
     moneta2.scale.x = 0.8
     moneta2.scale.y = 0.8
 
     moneta3 = game.add.sprite(520, 2840, 'moneta');
     game.physics.arcade.enable(moneta3);
+    moneta3.animations.add("oggetto", [0, 1, 2, 3, 4, 5, 6, 7], true)
     moneta3.scale.x = 0.8
     moneta3.scale.y = 0.8
 
     moneta4 = game.add.sprite(704, 2158, 'moneta');
     game.physics.arcade.enable(moneta4);
+    moneta4.animations.add("oggetto", [0, 1, 2, 3, 4, 5, 6, 7], true)
     moneta4.scale.x = 0.8
     moneta4.scale.y = 0.8
 
     moneta5 = game.add.sprite(273, 1111, 'moneta');
     game.physics.arcade.enable(moneta5);
+    moneta5.animations.add("oggetto", [0, 1, 2, 3, 4, 5, 6, 7], true)
     moneta5.scale.x = 0.8
     moneta5.scale.y = 0.8
 
