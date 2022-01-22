@@ -118,7 +118,7 @@ function create() {
     platform1.create(170, 3720, 'platform1');
 
     cloudplatform = game.add.sprite(508, 3540, 'cloudplatform');
-    cloudplatform1 = game.add.sprite(124, 3350, 'cloudplatform');
+    cloudplatform1 = game.add.sprite(140, 3350, 'cloudplatform');
     cloudplatform2 = game.add.sprite(598, 3165, 'cloudplatform');
     cloudplatform3 = game.add.sprite(253, 3010, 'cloudplatform');
     cloudplatform4 = game.add.sprite(600, 2835, 'cloudplatform');
