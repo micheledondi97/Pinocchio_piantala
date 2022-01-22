@@ -124,20 +124,6 @@ function update() {
 
     player.body.velocity.x = 0;
 
-
-
-
-
-    if (player.x > 10200 && contapunti6.visible == true && contapunti4.visible == true && contapunti3.visible == true && contapunti2.visible == true && contapunti1.visible == true && contapunti.visible == true) {
-        enemy9.kill()
-        fata.alpha = 1
-    }
-    else if (player.x > 10528) {
-        game.time.events.add(100, function () {
-            respawn2(player)
-        })
-    }
-
     function respawn2(player) {
         player.x = check1.x;
         player.y = check1.y;
